@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>2be79cd7-32ae-42d6-8e7d-d879a227e1a8.SCHEMA:main</OriginalElement>
+  <nodes>
+    <node x="479.0" y="1005.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user_groups</node>
+    <node x="1105.44" y="0.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_category</node>
+    <node x="67.14666666666665" y="574.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_permission</node>
+    <node x="0.0" y="1245.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.home_contactmessage</node>
+    <node x="469.3883333333333" y="121.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_content_type</node>
+    <node x="1322.44" y="33.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_location</node>
+    <node x="224.0" y="1005.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user_user_permissions</node>
+    <node x="0.0" y="1005.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_group_permissions</node>
+    <node x="1240.0133333333333" y="420.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_rentalad</node>
+    <node x="1320.6383333333333" y="994.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_images</node>
+    <node x="650.0" y="497.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user</node>
+    <node x="841.0" y="1245.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.sqlite_sequence</node>
+    <node x="615.0" y="1245.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_session</node>
+    <node x="405.0" y="1245.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_migrations</node>
+    <node x="1113.875" y="928.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_comment</node>
+    <node x="329.10666666666657" y="596.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_group</node>
+    <node x="838.0" y="950.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_admin_log</node>
+    <node x="1544.44" y="0.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.home_setting</node>
+    <node x="226.0" y="1245.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.sqlite_master</node>
+    <node x="656.0" y="961.0">2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.home_userprofile</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user_groups" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user">
+      <point x="39.25" y="-59.0" />
+      <point x="596.75" y="908.0" />
+      <point x="702.2" y="908.0" />
+      <point x="-34.799999999999955" y="147.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_images" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_rentalad">
+      <point x="0.0" y="-70.0" />
+      <point x="1395.1383333333333" y="908.0" />
+      <point x="1369.7633333333333" y="908.0" />
+      <point x="43.25" y="224.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_group_permissions" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_group">
+      <point x="51.0" y="-59.0" />
+      <point x="153.0" y="908.0" />
+      <point x="365.60666666666657" y="908.0" />
+      <point x="-36.5" y="48.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_location" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_location">
+      <point x="-44.25" y="147.0" />
+      <point x="1366.69" y="347.0" />
+      <point x="1302.44" y="347.0" />
+      <point x="1302.44" y="180.0" />
+      <point x="-88.5" y="-0.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_category" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_category">
+      <point x="-44.25" y="180.0" />
+      <point x="1149.69" y="380.0" />
+      <point x="1085.44" y="380.0" />
+      <point x="1085.44" y="180.0" />
+      <point x="-88.5" y="-0.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_permission" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_content_type">
+      <point x="0.0" y="-70.0" />
+      <point x="155.14666666666665" y="400.0" />
+      <point x="514.6383333333333" y="400.0" />
+      <point x="-45.25" y="59.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_admin_log" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_content_type">
+      <point x="51.75" y="-114.0" />
+      <point x="993.25" y="908.0" />
+      <point x="1029.19" y="908.0" />
+      <point x="1029.19" y="400.0" />
+      <point x="605.1383333333333" y="400.0" />
+      <point x="45.25" y="59.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_group_permissions" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_permission">
+      <point x="-51.0" y="-59.0" />
+      <point x="51.0" y="908.0" />
+      <point x="111.14666666666665" y="908.0" />
+      <point x="-44.0" y="70.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user_groups" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_group">
+      <point x="-39.25" y="-59.0" />
+      <point x="518.25" y="888.0" />
+      <point x="438.60666666666657" y="888.0" />
+      <point x="36.5" y="48.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_comment" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_rentalad">
+      <point x="42.75" y="-136.0" />
+      <point x="1242.125" y="908.0" />
+      <point x="1283.2633333333333" y="908.0" />
+      <point x="-43.25" y="224.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.django_admin_log" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user">
+      <point x="-51.75" y="-114.0" />
+      <point x="889.75" y="908.0" />
+      <point x="771.8" y="908.0" />
+      <point x="34.799999999999955" y="147.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_rentalad" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_location">
+      <point x="43.25" y="-224.0" />
+      <point x="1369.7633333333333" y="400.0" />
+      <point x="1455.19" y="400.0" />
+      <point x="44.25" y="147.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_rentalad" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_category">
+      <point x="-43.25" y="-224.0" />
+      <point x="1283.2633333333333" y="400.0" />
+      <point x="1238.19" y="400.0" />
+      <point x="44.25" y="180.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.home_userprofile" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user">
+      <point x="0.0" y="-103.0" />
+      <point x="0.0" y="147.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user_user_permissions" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user">
+      <point x="58.75" y="-59.0" />
+      <point x="400.25" y="898.0" />
+      <point x="667.4" y="898.0" />
+      <point x="-69.60000000000002" y="147.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user_user_permissions" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_permission">
+      <point x="-58.75" y="-59.0" />
+      <point x="282.75" y="898.0" />
+      <point x="199.14666666666665" y="898.0" />
+      <point x="44.0" y="70.0" />
+    </edge>
+    <edge source="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.emlak_comment" target="2be79cd7-32ae-42d6-8e7d-d879a227e1a8.TABLE:main.auth_user">
+      <point x="-42.75" y="-136.0" />
+      <point x="1156.625" y="898.0" />
+      <point x="806.6" y="898.0" />
+      <point x="69.60000000000002" y="147.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3691084611016468" x="870.5" y="758.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

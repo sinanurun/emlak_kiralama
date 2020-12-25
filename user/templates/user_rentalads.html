@@ -1,0 +1,114 @@
+{% extends 'homebase.html' %}
+
+{#{% block title %} Başlık {% endblock %}#}
+{#{% block description %} tanımlamalar {% endblock %}#}
+{#{% block keywords %} anahtar kelimeler {% endblock %}#}
+{% block title %} {{ setting.title }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block head %}
+
+    <link rel="shortcut icon" type="image/x-icon" href='{{ setting.icon.url }}'/>
+
+{% endblock %}
+
+{% block body %}
+
+      <!-- Start Proerty header  -->
+
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>CONTACT</h2>
+            <ol class="breadcrumb">
+            <li><a href="/">HOME</a></li>
+            <li class="active">Contact</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Proerty header  -->
+
+    <!-- section -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-3">
+                    {% include "user_panel.html" %}
+                </div>
+
+                <div class="col-md-9">
+                    <div class="order-summary clearfix">
+                        <div class="section-title">
+                            <h3 class="title">Rental Ads List</h3>
+                              {% if messages %}
+                                                {% for message in messages %}
+                                                    <div class="alert alert-{{message.tags}}" role="alert">
+                                                        {{ message }}
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+
+
+                        </div>
+                        <table class="shopping-cart-table table">
+
+                        <tr>
+                            <th class="text-left">
+                                <a href="/user/user_rentalads_add" class="primary-btn">Add New Rental Ad.</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Rental Ad </th>
+                            <th class="text-left">Image</th>
+                            <th class="text-left">Category</th>
+                            <th class="text-left">Price</th>
+                            <th class="text-left">Area</th>
+                            <th class="text-left">Status </th>
+                            <th class="text-left">Date </th>
+                            <th class="text-left">Update</th>
+                            <th class="text-left">Delete</th>
+
+                        </tr>
+                        {% for rs in rentalads %}
+                            <tr>
+                                <td class="text-left">
+                                    <a href="/rentalad/{{ rs.id}}/{{ rs.slug }}">
+                                        <strong> {{ rs.title}}</strong>
+                                    </a>
+                                </td>
+                                <td class="text-left"><img src="{{ rs.image.url}}" width="50"/> </td>
+                                <td class="text-left">{{ rs.category}} </td>
+                                <td class="text-left">{{ rs.price}} </td>
+                                <td class="text-left">{{ rs.area}} </td>
+                                <td class="text-left">{{ rs.status.title}} </td>
+                                <td class="text-left">{{ rs.create_at}} </td>
+                                <td class="text-left">
+                                    <a class="primary-btn" href="/user/update_rentalad/{{ rs.id }}" onclick="return confirm('Will be Update ! Are you sure?')"> Update </a>
+                                </td>
+                                <td class="text-left">
+                                    <a class="primary-btn" href="/user/delete_rentalad/{{ rs.id }}" onclick="return confirm('Will be Delete ! Are you sure?')"> Delete </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /section -->
+
+{% endblock %}

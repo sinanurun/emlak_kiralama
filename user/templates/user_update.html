@@ -1,0 +1,74 @@
+{% extends 'homebase.html' %}
+
+{#{% block title %} Başlık {% endblock %}#}
+{#{% block description %} tanımlamalar {% endblock %}#}
+{#{% block keywords %} anahtar kelimeler {% endblock %}#}
+{% block title %} {{ setting.title }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block head %}
+
+    <link rel="shortcut icon" type="image/x-icon" href='{{ setting.icon.url }}'/>
+
+{% endblock %}
+
+{% block body %}
+
+      <!-- Start Proerty header  -->
+
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>CONTACT</h2>
+            <ol class="breadcrumb">
+            <li><a href="/">HOME</a></li>
+            <li class="active">Contact</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Proerty header  -->
+
+<div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-3">
+                    {% include "user_panel.html" %}
+                </div>
+
+                <div class="col-md-9">
+                    <div class="billing-details">
+                        <div class="section-title">
+                            <h3 class="title">User Profile Update</h3>
+                        </div>
+                    </div>
+
+                    <form method="POST" enctype = "multipart/form-data">
+                        {% csrf_token %}
+                        <fieldset class="form-group">
+                            {{ user_form.as_p  }}
+                            {{ profile_form.as_p  }}
+                        </fieldset>
+                        <div class="form-group">
+                            <button class="primary-btn" type="submit">Update</button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /section -->
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'homebase.html' %}
+
+{#{% block title %} Başlık {% endblock %}#}
+{#{% block description %} tanımlamalar {% endblock %}#}
+{#{% block keywords %} anahtar kelimeler {% endblock %}#}
+{% block title %} {{ setting.title }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block head %}
+
+    <link rel="shortcut icon" type="image/x-icon" href='{{ setting.icon.url }}'/>
+
+{% endblock %}
+
+{% block body %}
+
+      <!-- Start Proerty header  -->
+
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>FAQ</h2>
+            <ol class="breadcrumb">
+            <li><a href="/">HOME</a></li>
+            <li class="active">FAQ</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Proerty header  -->
+
+
+    <!-- section -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <div id="accordion">
+                    {% for rs in faq %}
+                        <h3>{{ rs.question }}</h3>
+                        <div>
+                            <p>
+                                {{ rs.answer | safe }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /section -->
+
+{% endblock %}
